@@ -18,6 +18,7 @@ public class MaxNumber<T extends Comparable<T>> {
         System.out.println("The Maximum Integer Number is:"+intResult);
         System.out.println("The Maximum Integer Number is:"+intResult1);
         System.out.println("The Maximum Integer Number is:"+intResult2);
+        System.out.println();
 
         MaxNumber<Float> maxnum = new MaxNumber<>();
         float floatresult = maxnum.findmax(12.45f,45.675f,67.56f);
@@ -26,5 +27,15 @@ public class MaxNumber<T extends Comparable<T>> {
         System.out.println("The Maximum Float Number is: "+floatresult);
         System.out.println("The Maximum Float Number is: "+floatresult1);
         System.out.println("The Maximum Float Number is: "+floatresult2);
+        System.out.println();
+
+        MaxNumber<String> maxstr = new MaxNumber<>();
+        String strresult = maxstr.findmax("Apple","Banana","WaterMelon");
+        String strresult1 = maxstr.findmax("India","Canada","Finland");
+        String strresult2 = maxstr.findmax("Samsung","Mi","Oppo");
+        // Based on Unicode Value Of The String
+        System.out.println("The Maximum String Number is: "+strresult);
+        System.out.println("The Maximum String Number is: "+strresult1);
+        System.out.println("The Maximum String Number is: "+strresult2);
     }
 }
