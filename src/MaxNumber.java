@@ -11,10 +11,10 @@ public class MaxNumber<T extends Comparable<T>> {
         return max;
     }
     public static void main(String[] args) {
-        MaxNumber<Integer> maxnum = new MaxNumber<>();
-        int result = maxnum.findmax(23,45,34);
-        int result1 = maxnum.findmax(67,34,49);
-        int result2 = maxnum.findmax(87,38,89);
+        MaxNumber<Float> maxnum = new MaxNumber<>();
+        float result = maxnum.findmax(12.45f,45.675f,67.56f);
+        float result1 = maxnum.findmax(45.21f,73.5f,43.65f);
+        float result2 = maxnum.findmax(21.3f,43.23f,21.67f);
         System.out.println("The Maximum Number is: "+result);
         System.out.println("The Maximum Number is: "+result1);
         System.out.println("The Maximum Number is: "+result2);
