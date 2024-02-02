@@ -11,13 +11,20 @@ public class MaxNumber<T extends Comparable<T>> {
         return max;
     }
     public static void main(String[] args) {
-        MaxNumber<String> maxnum = new MaxNumber<>();
-        String result = maxnum.findmax("Apple","Banana","WaterMelon");
-        String result1 = maxnum.findmax("India","Canada","England");
-        String result2 = maxnum.findmax("Pumpkin","Carrot","Potato");
-        // Based on Unicode Value Of The String
-        System.out.println("The Maximum String is: "+result);
-        System.out.println("The Maximum String is: "+result1);
-        System.out.println("The Maximum String is: "+result2);
+        MaxNumber<Integer> maxint = new MaxNumber<>();
+        Integer intResult = maxint.findmax(5, 12, 8);
+        Integer intResult1 = maxint.findmax(45, 52, 17);
+        Integer intResult2 = maxint.findmax(55, 82, 82);
+        System.out.println("The Maximum Integer Number is:"+intResult);
+        System.out.println("The Maximum Integer Number is:"+intResult1);
+        System.out.println("The Maximum Integer Number is:"+intResult2);
+
+        MaxNumber<Float> maxnum = new MaxNumber<>();
+        float floatresult = maxnum.findmax(12.45f,45.675f,67.56f);
+        float floatresult1 = maxnum.findmax(45.21f,73.5f,43.65f);
+        float floatresult2 = maxnum.findmax(21.3f,43.23f,21.67f);
+        System.out.println("The Maximum Float Number is: "+floatresult);
+        System.out.println("The Maximum Float Number is: "+floatresult1);
+        System.out.println("The Maximum Float Number is: "+floatresult2);
     }
 }
