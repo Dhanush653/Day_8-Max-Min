@@ -11,12 +11,13 @@ public class MaxNumber<T extends Comparable<T>> {
         return max;
     }
     public static void main(String[] args) {
-        MaxNumber<Float> maxnum = new MaxNumber<>();
-        float result = maxnum.findmax(12.45f,45.675f,67.56f);
-        float result1 = maxnum.findmax(45.21f,73.5f,43.65f);
-        float result2 = maxnum.findmax(21.3f,43.23f,21.67f);
-        System.out.println("The Maximum Number is: "+result);
-        System.out.println("The Maximum Number is: "+result1);
-        System.out.println("The Maximum Number is: "+result2);
+        MaxNumber<String> maxnum = new MaxNumber<>();
+        String result = maxnum.findmax("Apple","Banana","WaterMelon");
+        String result1 = maxnum.findmax("India","Canada","England");
+        String result2 = maxnum.findmax("Pumpkin","Carrot","Potato");
+        // Based on Unicode Value Of The String
+        System.out.println("The Maximum String is: "+result);
+        System.out.println("The Maximum String is: "+result1);
+        System.out.println("The Maximum String is: "+result2);
     }
 }
